@@ -11,7 +11,7 @@ const Navbar = () => {
           href="/"
           className="flex title-font font-medium justify-center align-middle items-center text-gray-900 mb-4 md:mb-0"
         >
-            <span className="ml-0 text-4xl font-semibold gradient-text">QUOT BOT</span>
+            <span className="ml-0 text-4xl font-extrabold gradient-text">QUOT BOT</span>
         </Link>
 
         <div className="flex space-x-4">

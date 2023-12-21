@@ -1,37 +1,50 @@
-
-"use client"
-import React from 'react'
-import { useRouter } from 'next/navigation';
-
+"use client";
+import React from "react";
+import { useRouter } from "next/navigation";
 
 const Signin = () => {
-    const router = useRouter();
+  const router = useRouter();
 
-    const handleSignupClick = (event) => {
-      event.preventDefault();
-      router.push('/Signup');
-    };
+  const handleSignupClick = (event) => {
+    event.preventDefault();
+    router.push("/Signup");
+  };
 
   return (
     <div className="container">
       <div className="form">
         <header className="sign-in-header">Sign in</header>
         <form action="#">
-          <input type="text" className="email-input" placeholder="Enter email" />
-          <input type="password" className="password-input" placeholder="Enter password" />
+          <input
+            type="text"
+            className="email-input"
+            placeholder="Enter email"
+          />
+          <input
+            type="password"
+            className="password-input"
+            placeholder="Enter password"
+          />
           <div className="forgot-password">
-            <a href="#" className="forgot-password-link">Forgot password?</a>
+            <a href="#" className="forgot-password-link">
+              Forgot password?
+            </a>
           </div>
           <button className="login-button">Login</button>
         </form>
         <div className="signup-link">
           <span className="signup-prompt">Don't have an account?</span>
-          <a href="/Signup" className="signup-link-text" onClick={handleSignupClick}>
+          <a
+            href="/Signup"
+            className="signup-link-text"
+            onClick={handleSignupClick}
+          >
             Signup
-          </a>         </div>
+          </a>{" "}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Signin
+export default Signin;
