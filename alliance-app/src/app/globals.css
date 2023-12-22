@@ -7,4 +7,69 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* CARD */
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vh;
+  padding-left: 50%;
+
+}
+
+.content-section {
+  padding: 20px;
+
+}
+
+.card {
+  width: 300px; /* Set width for each card */
+  padding: 30px; /* Add padding inside each card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card svg {
+  display: block;
+  margin: 0 auto;
+  /* margin-bottom: 15px; */
+}
+
+.circle-background {
+  display: inline-block;
+  background-color: #f1f1f1; /* Light gray background */
+  border-radius: 50%; /* Create a circle */
+  padding: 10px; /* Adjust the size of the circle */
+}
+
+.circle-background svg {
+  display: block;
+  margin: 0 auto;
+  width: 30px; /* Adjust the size of the SVG icon */
+  height: 30px;
+  fill: none;
+  stroke: #0C81F7;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.card h5 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600; /* Semi-bold font weight */
+  margin-top: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9em;
+  
+}
 
