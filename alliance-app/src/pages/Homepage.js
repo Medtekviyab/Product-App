@@ -74,132 +74,104 @@ const Homepage = () => {
           The features Makes the difference
         </p>
       </div>
-
-      <div class="flex justify-center mt-10">
-        <a
-          href="#"
-          class="block sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-4 "
-        >
+ <div class="card_container">
+          <div class="content-section">
+            <div class="card">
+            <div class="circle-background">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0C81F7"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-microscope"
+            >
+              <path d="M6 18h8" />
+              <path d="M3 22h18" />
+              <path d="M14 22a7 7 0 1 0 0-14h-1" />
+              <path d="M9 14h2" />
+              <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
+              <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
+            </svg>
+            </div>
+            <h5> MICRO </h5> 
+            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
+            </div>
+          </div>
+          <div class="card">
+          <div class="circle-background">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#0C81F7"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-microscope"
-          >
-            <path d="M6 18h8" />
-            <path d="M3 22h18" />
-            <path d="M14 22a7 7 0 1 0 0-14h-1" />
-            <path d="M9 14h2" />
-            <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
-            <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
-          </svg>
-          <h5 class="mb-2 mt-10 text-2xl font-bold tracking-tight text-gray-900 dark:text-white  text-left">
-            MICRO
-          </h5>
-          <p class="font-normal text-gray-700 dark:text-gray-400  text-left">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-        </a>
-
-        <a
-          href="#"
-          class="block sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#0C81F7"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bot"
-          >
-            <path d="M12 8V4H8" />
-            <rect width="16" height="12" x="4" y="8" rx="2" />
-            <path d="M2 14h2" />
-            <path d="M20 14h2" />
-            <path d="M15 13v2" />
-            <path d="M9 13v2" />
-          </svg>
-          <h5 class="mb-2 mt-10 text-2xl font-bold tracking-tight text-gray-900 dark:text-white  text-left">
-            ROBOT
-          </h5>
-          <p class="font-normal text-gray-700 dark:text-gray-400  text-left">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-        </a>
-
-        <a
-          href="#"
-          class="block sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#0C81F7"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-activity-square"
-          >
-            <rect width="18" height="18" x="3" y="3" rx="2" />
-            <path d="M17 12h-2l-2 5-2-10-2 5H7" />
-          </svg>
-
-          <h5 class="mb-2 mt-10 text-2xl font-bold tracking-tight text-gray-900 dark:text-white  text-left">
-            ACTIVITY
-          </h5>
-          <p class="font-normal text-gray-700 dark:text-gray-400  text-left">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-        </a>
-
-        <a
-          href="#"
-          class="block sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#0C81F7"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-file-text"
-          >
-            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-            <polyline points="14 2 14 8 20 8" />
-            <line x1="16" x2="8" y1="13" y2="13" />
-            <line x1="16" x2="8" y1="17" y2="17" />
-            <line x1="10" x2="8" y1="9" y2="9" />
-          </svg>
-          <h5 class="mb-2 mt-10 text-2xl font-bold tracking-tight text-gray-900 dark:text-white  text-left">
-            FILE
-          </h5>
-          <p class="font-normal text-gray-700 dark:text-gray-400  text-left">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-        </a>
-      </div>
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0C81F7"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-truck"
+            >
+              <path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11" />
+              <path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2" />
+              <circle cx="7" cy="18" r="2" />
+              <path d="M15 18H9" />
+              <circle cx="17" cy="18" r="2" />
+            </svg>
+            </div>
+            <h5> ACTIVITY </h5> 
+            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
+            </div>
+            <div class="card">
+            <div class="circle-background">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0C81F7"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-activity-square"
+            >
+              <rect width="18" height="18" x="3" y="3" rx="2" />
+              <path d="M17 12h-2l-2 5-2-10-2 5H7" />
+            </svg>
+            </div>
+            <h5> ROBOT </h5> 
+            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
+            </div>
+            <div class="card">
+            <div class="circle-background">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0C81F7"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-file-text"
+            >
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" x2="8" y1="13" y2="13" />
+              <line x1="16" x2="8" y1="17" y2="17" />
+              <line x1="10" x2="8" y1="9" y2="9" />
+            </svg>
+            </div>
+            <h5> FILE </h5> 
+            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
+            </div>
+        </div>
     </>
   );
 };
