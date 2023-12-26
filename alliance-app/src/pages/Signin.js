@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import '../../src/app/globals.css';
+import Navbar from "@/components/Navbar";
 
 const Signin = () => {
   const router = useRouter();
@@ -11,9 +13,10 @@ const Signin = () => {
   };
 
   return (
-    <div className="container">
+
+    <div className="signin_container">
       <div className="form">
-        <header className="sign-in-header">Sign in</header>
+        <header className="sign-in-header">SIGN IN</header>
         <form action="#">
           <input
             type="text"
@@ -40,7 +43,7 @@ const Signin = () => {
             onClick={handleSignupClick}
           >
             Signup
-          </a>{" "}
+          </a>
         </div>
       </div>
     </div>
