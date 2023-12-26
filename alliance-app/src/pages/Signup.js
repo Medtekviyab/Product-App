@@ -1,18 +1,22 @@
 import React from 'react';
 import '../../src/app/globals.css';
+import { useRouter } from "next/navigation";
+
 
 
 const Signup = () => {
-    const handleSignUpClick = () => {
-        // Navigate to the sign-in page when Sign Up button is clicked
-        window.location.href = '/Signin'; // Replace '/signin' with the URL of your sign-in page
-      };
+  const router = useRouter();
+
+  const handleSignInClick = () => {
+    router.push("/Signin");
+  };
+   
 
  
   return (
-    <div className="container">
+    <div className="signup_container">
       <div className="signup-form">
-        <header className="signup-header">Create an Account</header>
+        <header className="signup-header">CREATE AN ACCOUNT</header>
         <form className="signup-form-fields" action="#">
           <input
             type="text"
@@ -20,7 +24,7 @@ const Signup = () => {
             placeholder="Enter email"
           />
           <input
-            type="password"
+            type="password" 
             className="password-input"
             placeholder="Enter password"
           />
@@ -29,7 +33,7 @@ const Signup = () => {
             className="confirm-password-input"
             placeholder="Confirm password"
           />
-           <button className="signup-button">Signup</button>
+           <button  type="button" className="signup-button inline-flex justify-center items-center" onClick={handleSignInClick} >Signup</button>
 
       </form>
       </div>
