@@ -3,73 +3,68 @@
 @tailwind utilities;
 
 .gradient-text {
-  background: linear-gradient(45deg, #020202, #399dfa);
+  background: linear-gradient(45deg, #020202, #0c81f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 /* CARD */
-
 .card_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 100vh;
-  padding-left: 50%;
-
+  gap: 20px;
+  padding-left: 5%;
 }
 
-.content-section {
-  padding: 20px;
-
-}
+/* @media (min-width: 768px) {
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    padding-left: 750px;
+  }
+} */
 
 .card {
-  width: 300px; /* Set width for each card */
-  padding: 30px; /* Add padding inside each card */
+  width: 400px;
+  height: 230px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .card svg {
   display: block;
   margin: 0 auto;
-  /* margin-bottom: 15px; */
 }
 
 .circle-background {
   display: inline-block;
-  background-color: #f1f1f1; /* Light gray background */
-  border-radius: 50%; /* Create a circle */
-  padding: 10px; /* Adjust the size of the circle */
-}
-
-.circle-background svg {
-  display: block;
-  margin: 0 auto;
-  width: 30px; /* Adjust the size of the SVG icon */
-  height: 30px;
-  fill: none;
-  stroke: #0C81F7;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .card h5 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  font-weight: 600; /* Semi-bold font weight */
+  font-weight: 600;
   margin-top: 10px;
 }
 
 .card p {
   color: #555;
   font-size: 0.9em;
-  
 }
 

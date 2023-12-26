@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Homepage = () => {
   return (
@@ -17,8 +18,9 @@ const Homepage = () => {
                 simple prompt. They harness AI to distill vast knowledge into
                 profound, relevant quotes.
               </p>
+
               <form className="max-w-md mx-full flex items-center">
-                <div className="relative w-full">
+                <div className="relative w-full shadow-lg rounded-lg">
                   <div className="flex items-center pl-3.5 pointer-events-none absolute inset-y-0 left-0">
                     <svg
                       className="w-4 h-4 text-gray-900 dark:text-gray-900"
@@ -47,6 +49,15 @@ const Homepage = () => {
                 </div>
               </form>
             </div>
+            <div class="flex justify-end">
+              <Image
+                src="/Bot.svg"
+                alt="product preview"
+                width="500"
+                height="500"
+                class="max-w-md h-auto"
+              />
+            </div>
           </div>
         </section>
       </div>
@@ -54,7 +65,7 @@ const Homepage = () => {
       <div className="relative isolate">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl -mt-60 sm:-top-80"
         >
           <div
             style={{
@@ -66,25 +77,26 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="text mt-10">
-        <p
-          className="text-base lg:text-4xl font-bold text-center"
-          style={{ color: "#0C81F7" }}
-        >
-          The features Makes the difference
+      <div className="text mt-0 mb-5 text-left ml-32">
+        <p className="text-base lg:text-4xl font-bold">
+          Our <span style={{ color: "#0C81F7" }}>promise</span> to you
+        </p>
+        <p className="text-base lg:text-1xl" style={{ width: "600px" }}>
+          Trust us to handle your bookkeeping, finance, and accounting needs
+          while you focus on growing your business.
         </p>
       </div>
- <div class="card_container">
-          <div class="content-section">
-            <div class="card">
-            <div class="circle-background">
+
+      <div class="card_container">
+        {/* <div class="card">
+          <div class="circle-background">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#0C81F7"
+              stroke="#696969"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -97,20 +109,23 @@ const Homepage = () => {
               <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
               <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
             </svg>
-            </div>
-            <h5> MICRO </h5> 
-            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
-            </div>
           </div>
-          <div class="card">
+          <h5> MICRO </h5>
+          <p>
+            {" "}
+            Through its lens, the microscope unveils the extraordinary within
+            the seemingly ordinary, magnifying the essence of life itself.
+          </p>
+        </div> */}
+        <div class="card">
           <div class="circle-background">
-          <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#0C81F7"
+              stroke="#000000"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -122,19 +137,23 @@ const Homepage = () => {
               <path d="M15 18H9" />
               <circle cx="17" cy="18" r="2" />
             </svg>
-            </div>
-            <h5> ACTIVITY </h5> 
-            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
-            </div>
-            <div class="card">
-            <div class="circle-background">
+          </div>
+          <h5> DELIVERY </h5>
+          <p>
+            {" "}
+            Through its lens, the microscope unveils the extraordinary within
+            the seemingly ordinary, magnifying the essence of life itself.
+          </p>
+        </div>
+        <div class="card">
+          <div class="circle-background">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#0C81F7"
+              stroke="#000000"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -143,19 +162,23 @@ const Homepage = () => {
               <rect width="18" height="18" x="3" y="3" rx="2" />
               <path d="M17 12h-2l-2 5-2-10-2 5H7" />
             </svg>
-            </div>
-            <h5> ROBOT </h5> 
-            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
-            </div>
-            <div class="card">
-            <div class="circle-background">
+          </div>
+          <h5> ROBOT </h5>
+          <p>
+            {" "}
+            Through its lens, the microscope unveils the extraordinary within
+            the seemingly ordinary, magnifying the essence of life itself.
+          </p>
+        </div>
+        <div class="card">
+          <div class="circle-background">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#0C81F7"
+              stroke="#000000"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -167,11 +190,15 @@ const Homepage = () => {
               <line x1="16" x2="8" y1="17" y2="17" />
               <line x1="10" x2="8" y1="9" y2="9" />
             </svg>
-            </div>
-            <h5> FILE </h5> 
-            <p> Through its lens, the microscope unveils the extraordinary within the seemingly ordinary, magnifying the essence of life itself.</p>
-            </div>
+          </div>
+          <h5> FILE </h5>
+          <p>
+            {" "}
+            Through its lens, the microscope unveils the extraordinary within
+            the seemingly ordinary, magnifying the essence of life itself.
+          </p>
         </div>
+      </div>
     </>
   );
 };
