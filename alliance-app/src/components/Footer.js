@@ -3,50 +3,18 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      {/* <footer class="bg-white rounded-lg shadow dark:bg-white m-4">
-        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://flowbite.com/"
-              class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-            >
-              <span class="gradient-text self-center text-3xl font-bold whitespace-nowrap dark:text-black">
-              QUOT BOT
-              </span>
+      <footer class="w-full p-8 mt-10 bg-white border-gray-200 shadow md:flex md:items-center md:justify-between dark:bg-gray-900 dark:border-gray-700">
+        <span class="text-3xl ml-24 text-white lg:text-center dark:text-white">
+         QUOT BOT
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-md font-medium text-white dark:text-white sm:mt-0">
+          <li>
+            <a href="#" class="hover:underline mr-20">
+              Contact us : quotbotsupport@gmail.com
             </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-black-500 sm:mb-0 dark:text-black-400">
-              <li>
-                <a href="#" class="hover:underline me-4 md:me-6">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline me-4 md:me-6">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline me-4 md:me-6">
-                  Licensing
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-800">
-            © 2023{" "}
-            <a href="https://flowbite.com/" class="hover:underline">
-              Quot Bot™
-            </a>
-            . All Rights Reserved.
-          </span>
-        </div>
-      </footer> */}
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 const Homepage = () => {
   return (
     <>
       <div className="py-8 px-4 mx-auto max-w-screen-xl justify-content: flex-start lg:py-16">
-        <section class="bg-white dark:bg-gray-900">
+        <section class="bg-white">
           <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
             <div class="flex flex-col justify-center">
               <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-gray">
@@ -77,46 +78,25 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="text mt-0 mb-5 text-left ml-32">
+      <div
+        className="text mt-0 mb-5 flex-container"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
         <p className="text-base lg:text-4xl font-bold">
           Our <span style={{ color: "#0C81F7" }}>promise</span> to you
         </p>
-        <p className="text-base lg:text-1xl" style={{ width: "600px" }}>
+        <p className="text-base lg:text-1xl" style={{ maxWidth: "600px" }}>
           Trust us to handle your bookkeeping, finance, and accounting needs
           while you focus on growing your business.
         </p>
       </div>
 
       <div class="card_container">
-        {/* <div class="card">
-          <div class="circle-background">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#696969"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-microscope"
-            >
-              <path d="M6 18h8" />
-              <path d="M3 22h18" />
-              <path d="M14 22a7 7 0 1 0 0-14h-1" />
-              <path d="M9 14h2" />
-              <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
-              <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
-            </svg>
-          </div>
-          <h5> MICRO </h5>
-          <p>
-            {" "}
-            Through its lens, the microscope unveils the extraordinary within
-            the seemingly ordinary, magnifying the essence of life itself.
-          </p>
-        </div> */}
         <div class="card">
           <div class="circle-background">
             <svg
@@ -199,6 +179,7 @@ const Homepage = () => {
           </p>
         </div>
       </div>
+
     </>
   );
 };
